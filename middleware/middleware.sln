@@ -3,9 +3,57 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kafka-Consumer", "Kafka-Consumer\Kafka-Consumer.csproj", "{658D4F35-C873-4A2B-86A0-0F5747D3D56B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kafka-Producer", "Kafka-Producer\Kafka-Producer.csproj", "{BE463BCB-1448-48B5-94B6-96E1D3E2515C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooKeeper-Client", "ZooKeeper-Client\ZooKeeper-Client.csproj", "{AFDB5F5F-3B8A-49A9-BED0-2B051B872010}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooKeeper-Server", "ZooKeeper-Server\ZooKeeper-Server.csproj", "{948C19D8-9D9D-40FA-ADDD-EC0E44D7FACD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kafka", "kafka", "{EE154B3B-2604-4ECE-A7CB-5744CAD8268D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zookeeper", "zookeeper", "{81D8497F-FA1E-4858-856B-839CC3DDDD1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mysql", "mysql", "{1C854DEE-FB67-415E-B597-50C312116A3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{A1B14FCB-915E-4671-AD1E-426B6EC2386A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redis", "redis", "{7689DF4C-065D-47FE-8CE6-EB146E0AEE4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prometheus", "prometheus", "{8ECD116C-F785-4070-90BF-26A6B5AE26BC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{658D4F35-C873-4A2B-86A0-0F5747D3D56B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658D4F35-C873-4A2B-86A0-0F5747D3D56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658D4F35-C873-4A2B-86A0-0F5747D3D56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658D4F35-C873-4A2B-86A0-0F5747D3D56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE463BCB-1448-48B5-94B6-96E1D3E2515C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE463BCB-1448-48B5-94B6-96E1D3E2515C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE463BCB-1448-48B5-94B6-96E1D3E2515C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE463BCB-1448-48B5-94B6-96E1D3E2515C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDB5F5F-3B8A-49A9-BED0-2B051B872010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDB5F5F-3B8A-49A9-BED0-2B051B872010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDB5F5F-3B8A-49A9-BED0-2B051B872010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDB5F5F-3B8A-49A9-BED0-2B051B872010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948C19D8-9D9D-40FA-ADDD-EC0E44D7FACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948C19D8-9D9D-40FA-ADDD-EC0E44D7FACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948C19D8-9D9D-40FA-ADDD-EC0E44D7FACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948C19D8-9D9D-40FA-ADDD-EC0E44D7FACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{658D4F35-C873-4A2B-86A0-0F5747D3D56B} = {EE154B3B-2604-4ECE-A7CB-5744CAD8268D}
+		{BE463BCB-1448-48B5-94B6-96E1D3E2515C} = {EE154B3B-2604-4ECE-A7CB-5744CAD8268D}
+		{AFDB5F5F-3B8A-49A9-BED0-2B051B872010} = {81D8497F-FA1E-4858-856B-839CC3DDDD1A}
+		{948C19D8-9D9D-40FA-ADDD-EC0E44D7FACD} = {81D8497F-FA1E-4858-856B-839CC3DDDD1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {579D9C0E-8D13-499A-BB05-EE54A87B5249}
